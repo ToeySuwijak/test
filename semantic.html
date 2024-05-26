@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML5 Semantic</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        #header {
+            margin-bottom: 15px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #main {
+            float: left;
+            width: 69%;
+        }
+
+        #sidebar {
+            float: right;
+            width: 29%;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        #footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .text-center {
+            display: block;
+            text-align: center;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="card" align="center">
+        <h1>ALL ABOUT ME</h1>
+        <p>Suwijak Wachsittipong</p>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Welcome Section -->
+        <section id="welcome" class="card">
+            <h2>ยินดีต้อนรับเข้าสู่เว็บไซต์</h2>
+            <p>
+                <br>เว็บไซด์นี้เป็นเว็บไซด์เกี่ยวกับการแนะนำตัวเอง<br/>
+                <a href="https://www.facebook.com/teuy.koo" class="text-center" target="_blank">facebook ของผม</a>
+                <a href="https://www.instagram.com/suwijak_?igsh=MWRrMXA2dGNveTY5NQ%3D%3D&utm_source=qr" class="text-center" target="_blank">instagram ของผม</a>
+            </p>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>PROFILE</h2>
+            <!-- Article One -->
+            <article class="article">
+                <h3></h3>
+                <p><b>ชื่อจริง : </b> สุวิจักษณ์ เวชสิทธิพงษ์</p>
+                <p><b>ชื่อเล่น : </b> เต้ย</p>
+                <p><b>อายุ : </b> 17 ปี</p>
+                <p><b>วันเกิด : </b> 31 สิงหาคม พศ. 2549</p>
+                <p><b>เพศ : </b> ชาย</p>
+                <p><b>สัญชาติ : </b> ไทย</p>
+                <p><b>ศาสนา : </b> พุทธ</p>
+            
+            </article>
+            <hr>
+            <!-- Article Two -->
+            <article class="article">
+                <h2>EDUCATION</h2>
+                <p><b>ระดับชั้นอนุบาล :</b> โรงเรียนโพฒิสารศึกษา</p>
+                <p><b>ระดับชั้นประถมศึกษา :</b> โรงเรียนโพฒิสารศึกษา</p>
+                <p><b>ระดับชั้นมัธยมศึกษาตอนต้น :</b> โรงเรียนโพฒิสารศึกษา</p>
+                <p><b>ระดับชั้นมัธยมศึกษาตอนปลาย :</b> โรงเรียนนครสวรรค์</p>
+            </article>
+            <hr>
+            <article>
+                <h2>SKILLS</h2>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PYTHON</li>
+
+            </article>
+            <hr>
+            <article>
+                <h2>MOTTO</h2>
+                <p>
+                    There is a saying : Yesterday is history , tomorrow is a mystery , but today is a gift. That is why it's called the <strong>"present"</strong>
+                    <br>มีคำกล่าวไว้ว่า เมื่อวานคืออดีต พรุ่งนี้สุดหยั่งรู้ แต่ปัจจุบันเป็นของขวัญ นั่นคือเหตุผลที่เราเรียกว่าปัจจุบัน(มุข)</br>
+                </p>
+
+            </article>
+        </section>
+    </main>
+   
+
+    <!-- Sidebar-->
+    <aside id="sidebar" class="card">     <!--<nav>=<aside>-->
+        <h3>ผลงาน</h3>
+        <!-- Navigation -->
+        <ul id="main-nav">
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">เกี่ยวกับเรา</a></li>
+            <li><a href="#">งานของเรา</a></li>
+        </ul>
+        <hr />
+        <h3>ติดต่อได้ที่</h3>
+        <ul>
+            <li><strong>ที่อยู่:</strong> 58 หมู่7 ตำบลบางม่วง อำเภอเมืองฯ จังหวัดนครสวรรค์</li>
+            <li><strong>เบอร์โทรศัพท์:</strong> (+66) 86-735-5600</li>
+            <li><strong>อีเมล:</strong> teuysuwijak2549@gmail.com</li>
+            <li><strong>Facebook:</strong> Suwijak Wachsittipong</li>
+            <li><strong>Instagram:</strong>Suwijak_</li>
+            <li><strong>Line:</strong>@taetoey หรือ 0867355600</li>
+        </ul>
+    </aside>
+
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="text-center">Copyright &copy; Suwijak Wachsittipong</p>
+    </footer>
+</body>
+</html>

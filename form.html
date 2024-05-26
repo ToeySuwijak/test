@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+    <style>
+        form{
+            border:2px solid blue;
+        }
+        input{
+            border:2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>แบบฟอร์มลงทะเบียน</h1>
+    <form>  <!--<form>..</form> ใช้สร้างแบบฟอร์มกรอกข้อมูล-->
+        <div>
+            <lable for="firstname">ชื่อจริง</lable>
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ (ก-ฮ)" required> <!--ใส่requiredไปจะทำให้หากไม่ใส่ข้อมูลลงไปจะไม่สามารถส่งข้อมูลไป back-end ได้--> 
+        </div>
+        <div>
+            <lable for="lastname">นามสกุล</lable> <!--lable for=""กำหนดป้ายชื่อให้ช่องรับข้อมูล-->
+            <input type="text" name="lname">   <!--input type=""สร้างช่องรับข้อความต่างๆ-->
+        </div>
+        <div>
+            <lable for="firstname">อีเมล</lable>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <lable for="firstname">รหัสผ่าน</lable>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <lable for="">ที่อยู่</lable>
+            <textarea name="" cols="20" rows="5" readonly>
+                TETAE
+            </textarea> <!--textarea สร้างช่องรับข้อความแบบหลายบรรทัด-->
+        </div>
+        <div>
+            <lable for="lastname">อายุ</lable>
+            <input type="number" name="age" min="0" max="10" value="2" readonly> <!--value=""ไว้กำหนดค่าเริ่มต้น-->
+        </div>                                                       <!--readonly ไม่สามารถเปลี่ยนค่าได้ อ่านได้อย่างเดียว-->
+        <div>
+            <lable for="lastname">วันเกิด</lable>
+            <input type="date" name="birthdate">
+        </div>
+        <div>
+            <lable for="lastname">เบอร์โทรศัพท์</lable>
+            <input type="tel" name="tel">
+        </div>
+        <div>
+            <lable for="lastname">สีที่ชอบ</lable>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <lable for="lastname">ช่วงตัวเลข</lable>
+            <input type="range" name="rangenumber" value="1">
+        </div>
+        <div>
+            <lable for="lastname">ระดับการศึกษา</lable>
+            <select name="edu" id="">
+                <option value="ปริญญาตรี">มัธยมศึกษา</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาตรี" selected>ปริญญาโท</option>
+            </select>
+        </div>
+        <div>
+            <lable for="lastname">เพศ</lable>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง    <!--ลบgenderออกจะเลิกได้หลายตัวเลือก-->
+            <input type="radio" name="gender">กำหนดเอง
+        </div>
+        <div>
+            <lable for="lastname">สิ่งที่ชอบ</lable>
+            <input type="checkbox" name="fav">เขียนเว็บ
+            <input type="checkbox" name="fav">สร้างเกม
+            <input type="checkbox" name="fav">ซ่อมคอม
+            <input type="checkbox" name="fav">เล่นเกม
+            <input type="checkbox" name="fav">อื่นๆ
+        </div>
+        <div>
+            <lable for="lastname">แนบเอกสาร</lable>
+            <input type="file">
+        </div>
+        <div>
+            <lable for="lastname">เว็บไซด์</lable>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">  <!--เหมือนกัน-->
+            <button type="submit">บันทึกข้อมูล</button>
+            <input type="reset" name="" id="" value="ล้างข้อมูล"> 
+            <button type="reset">ล้างข้อมูล</button>
+        </div>  <!--input type="มีอีกมากมาย"-->
+    </form>
+    <span style="border:1px solid red;">TETAEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</span>
+</body>
+</html>
